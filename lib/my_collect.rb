@@ -1,13 +1,14 @@
 def my_collect(array)
   i = 0
+  arr = []
   while i < array.length
-    yield(array[i])
+    arr << yield(array[i])
     i += 1
   end
-  return array
+  return arr
 end
 
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-my_collect(array) do |name|
-  name.split(" ").first
-end
+# array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+# my_collect(array) do |name|
+#   name.split(" ").first
+# end
