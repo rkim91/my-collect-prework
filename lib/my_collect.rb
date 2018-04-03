@@ -1,8 +1,8 @@
-# def my_collect(names)
-#   i = 0
-#   while i < names.length
-#     yield(names[i])
-#     i += 1
-#   end
-#   names.upcase
-# end
+def my_collect(array)
+  i = 0
+  while i < array.length
+    yield(array[i])
+    i += 1
+  end
+  array.upcase
+end
